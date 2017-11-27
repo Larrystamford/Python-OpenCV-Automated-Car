@@ -95,6 +95,6 @@ This project is licensed under the MIT License - see t
 
 ## Acknowledgments
 
-* * **Harrison Kinsley** - [*Sentdex*](https://github.com/Sentdex/)
-* Inspiration
-* etc
+* **Harrison Kinsley** - [*His Github link*](https://github.com/Sentdex/)
+* **Naoki Shibuya** - [*His Github link*](https://github.com/naokishibuya)
+
