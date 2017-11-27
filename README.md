@@ -1,6 +1,28 @@
 # Python-OpenCV-Automated-Car
+# Finding Lane Lines on the Road
+***
 
-{Picture}
+[![png](images/dark-shades.png)](https://youtu.be/HTPEWC-fjCQ)
+[Video Link](https://youtu.be/HTPEWC-fjCQ)
+
+[Digest on Medium](https://medium.com/@naokishibuya/finding-lane-lines-on-the-road-30cf016a1165#.en7kaxeq4)
+
+In this project, I used Python and OpenCV to find lane lines in the road images.  
+
+The following techniques are used:
+
+- Color Selection
+- Canny Edge Detection
+- Region of Interest Selection
+- Hough Transform Line Detection
+
+Finally, I applied all the techniques to process video clips to find lane lines in them.
+
+## Test Images
+
+Let's load and examine the test images.
+
+![png](images/output_6_0.png)
 A small learning project to get comfortable with using Python and OpenCV
 
 
