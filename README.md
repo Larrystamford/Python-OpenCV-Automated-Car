@@ -1,7 +1,15 @@
 # Python-OpenCV-Automated-Car
 A small learning project to get comfortable with using Python and OpenCV
 
-#In this project, we are touching on using certain OpenCV tools to aid us with the process of finding the lane markings on the road.
+
+
+In this project, I touched on using certain
+OpenCV tools to aid with the process of finding the lane masdsadsadsadarkings
+on the road of a (udemy driving game) After which, rules were hardcoded to
+allow the car to drive itself based on the detected lane markings.
+
+
+
 
 
 ## Getting Started
