@@ -93,6 +93,6 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## Acknowledgments
 This project would not have been possible without:
-* **Harrison Kinsley** - [*His Github link*](https://github.com/Sentdex/)
-* **Naoki Shibuya** - [*His Github link*](https://github.com/naokishibuya)
+* **Harrison Kinsley** - [His Github link](https://github.com/Sentdex/)
+* **Naoki Shibuya** - [His Github link](https://github.com/naokishibuya)
 
