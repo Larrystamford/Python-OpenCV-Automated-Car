@@ -2,10 +2,8 @@
 # Finding Lane Lines on the Road
 ***
 
-[![png](images/dark-shades.png)](https://youtu.be/HTPEWC-fjCQ)
-[Video Link](https://youtu.be/HTPEWC-fjCQ)
+[![png](images/output_6_0.png)]
 
-[Digest on Medium](https://medium.com/@naokishibuya/finding-lane-lines-on-the-road-30cf016a1165#.en7kaxeq4)
 
 In this project, I used Python and OpenCV to find lane lines in the road images.  
 
