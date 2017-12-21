@@ -16,9 +16,10 @@ The following techniques were used:
 - Canny Edge Detection
 - Region of Interest Selection
 - Hough Transform Line Detection
-- 
+- Averaging and Extrapolating Lines
 
-An excellent step-by-step guide, done by Mr Naoki Shibuya, c
+To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)!
+
 Finally, I applied all the techniques to process video clips to find lane lines in them.
 
 ## Test Images
