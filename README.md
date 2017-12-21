@@ -4,8 +4,10 @@
 
 ![png](Images/output_6_0.png)
 
-
-In this project, I used Python and OpenCV to find lane lines in the road images.  
+## A small learning project to get comfortable with using Python and OpenCV
+In this project, I touched on using certain 
+OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-driving car simulator. After which, rules were hardcoded to allow the car to drive itself based on the detected lane markings.
+Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent the road is.
 
 The following techniques are used:
 
@@ -21,16 +23,7 @@ Finally, I applied all the techniques to process video clips to find lane lines 
 Let's load and examine the test images.
 
 ![png](images/output_6_0.png)
-A small learning project to get comfortable with using Python and OpenCV
 
-
-
-In this project, I touched on using certain
-OpenCV tools to aid with the process of finding the lane markings
-on the road of a (udemy driving game). After which, rules were hardcoded to
-allow the car to drive itself based on the detected lane markings.
-The final result is that the car will be able to keep itself within the lanes for an average of 30 seconds before crashing.
-However, it should be noted that I have ran the codes on an old laptop and results would differ for individuals.
 
 
 
