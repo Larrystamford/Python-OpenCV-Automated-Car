@@ -2,7 +2,7 @@
 # Finding Lane Lines on the Road
 ***
 
-[![png](images/output_6_0.png)]
+[![png](Images/output_6_0.png)]
 
 
 In this project, I used Python and OpenCV to find lane lines in the road images.  
