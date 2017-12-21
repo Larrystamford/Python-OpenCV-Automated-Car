@@ -1,6 +1,4 @@
 # Python-OpenCV-Automated-Car
-# Finding Lane Lines on the Road
-***
 
 ![png](Images/output_6_0.png)
 
@@ -10,6 +8,7 @@ OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-d
   
 Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent the road is.
 
+## Finding the lanes
 The following techniques were used:
 
 - Color Selection
@@ -20,7 +19,6 @@ The following techniques were used:
 
 To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)!
 
-Finally, I applied all the techniques to process video clips to find lane lines in them.
 
 ## Test Images
 
