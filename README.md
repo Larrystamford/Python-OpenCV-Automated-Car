@@ -10,13 +10,15 @@ OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-d
   
 Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent the road is.
 
-The following techniques are used:
+The following techniques were used:
 
 - Color Selection
 - Canny Edge Detection
 - Region of Interest Selection
 - Hough Transform Line Detection
+- 
 
+An excellent step-by-step guide, done by Mr Naoki Shibuya, c
 Finally, I applied all the techniques to process video clips to find lane lines in them.
 
 ## Test Images
