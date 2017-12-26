@@ -43,10 +43,10 @@ from directkeys import PressKey, ReleaseKey, W, A, S, D
 # move the car forward for a second
 def main():
     while(True):
-      Presskey(W)
+      PressKey(W)
       time.sleep(1)
 ```
-Disclaimer: directkeys.py came from Sentdex[https://pythonprogramming.net/direct-input-game-python-plays-gta-v/] who took it from an answer in [Stackoverflow](https://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game)
+Disclaimer: directkeys.py came from [Sentdex](https://pythonprogramming.net/direct-input-game-python-plays-gta-v/) who took it from an answer in [stackoverflow](https://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game).
 
 ## Step 3 - Using OpenCV on the game screen
 The following techniques were used:
