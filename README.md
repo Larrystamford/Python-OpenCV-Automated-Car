@@ -33,9 +33,22 @@ def main():
             cv2.destroyAllWindows()
             break
 ```
-To achieve step 2, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
+(put image of imagegrab running)
+![png](Images/output_6_0.png)
 
-## Using OpenCV on the game screen
+To achieve step 2, we will need to [download](directkeys.py) and import directkeys.py.
+```python
+from directkeys import PressKey, ReleaseKey, W, A, S, D
+
+# move the car forward for a second
+def main():
+    while(True):
+      Presskey(W)
+      time.sleep(1)
+```
+Disclaimer: directkeys.py came from Sentdex[https://pythonprogramming.net/direct-input-game-python-plays-gta-v/] who took it from an answer in [Stackoverflow](https://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game)
+
+## Step 3 - Using OpenCV on the game screen
 The following techniques were used:
 
 - Color Selection
