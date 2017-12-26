@@ -17,7 +17,7 @@ The following techniques were used:
 - Hough Transform Line Detection
 - Averaging and Extrapolating Lines
 
-To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)!
+To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here]() for the complete code of this project. 
 
 
 ## Test Images
