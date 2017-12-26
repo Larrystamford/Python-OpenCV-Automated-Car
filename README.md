@@ -8,7 +8,34 @@ OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-d
   
 Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent the road is.
 
-## Finding the lanes
+## Getting Started
+The initial goals are:
+1) Access the game screen
+2) Send keyboard input to game screen
+3) Use OpenCV on the game screen
+
+Before that, we need to import cv2, time and numpy.
+
+To achieve step 1, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
+```python
+import cv2
+import time
+import numpy as np
+
+from PIL import ImageGrab
+
+def main():
+    while(True):
+        # bbox dimensions to match an 800x600 resolution of the Udacity self-driving car simulator in windowed mode   
+        screen = np.array(ImageGrab.grab(bbox=(0,40,800,600)))
+        cv2.imshow('window',cv2.cvtColor(screen, cv2.COLOR_BGR2RGB))
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+            cv2.destroyAllWindows()
+            break
+```
+To achieve step 2, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
+
+## Using OpenCV on the game screen
 The following techniques were used:
 
 - Color Selection
