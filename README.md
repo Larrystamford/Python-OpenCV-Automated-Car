@@ -43,8 +43,8 @@ from directkeys import PressKey, ReleaseKey, W, A, S, D
 # move the car forward for a second
 def main():
     while(True):
-      PressKey(W)
-      time.sleep(1)
+        PressKey(W)
+        time.sleep(1)
 ```
 Disclaimer: directkeys.py came from [Sentdex](https://pythonprogramming.net/direct-input-game-python-plays-gta-v/) who took it from an answer in [stackoverflow](https://stackoverflow.com/questions/14489013/simulate-python-keypresses-for-controlling-a-game).
 
@@ -57,72 +57,58 @@ The following techniques were used:
 - Hough Transform Line Detection
 - Averaging and Extrapolating Lines
 
-To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here]() for the complete code of this project. 
+To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/fill in with file name) to browse the codes for these 5 steps. 
 
-
-## Test Images
-
-Let's load and examine the test images.
-
+## Finding car lanes? Checked.
 ![png](images/output_6_0.png)
 
-
-
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+## Self-driving
+The idea I decided to go with is a simple one. 
+1) Attain the Y- and X-coordinates that is at the centre of the identified lane line/lines.
+```python
 
 ```
-Give examples
+2) If two lane lines have been identified, the centre of the car is to stay between the two calculated X-coordinates.
+![png]()
+```python
+def main():
+    while(True):
+        lower_limit = -65
+        upper_limit = 65
+
+        if lower_limit < abs(right_midx - 400) - abs(left_midx - 400) < upper_limit:
+            straight()
+            print('Both lanes found. I am near the centre of both lanes, going straight. {} < {}value < {}'
+                  .format(two_lower_limit, abs(right_midx - 400) - abs(left_midx - 400), two_upper_limit))
 ```
 
-### Installing
+3) If only one of the lane line has been indentified, the centre of the car is to stay a safe distance from the calculated X-coordinate.
+![png]()
+```python
+def main():
+    while(True):
+        left_lower_limit = 70
+        left_upper_limit = 120
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+        if left_lower_limit < abs(left_midx - 400) < left_upper_limit:
+            straight()
+            print('Only left lane. Not too far and not too near from left lane, going straight. {} < {}value < {}'
+                  .format(left_lower_limit, abs(left_midx - 400), left_upper_limit))
 ```
-Give the example
-```
+The values of the lower and upper limit was decided by trial and error. In order to tidy up the codes and increase the efficiency of the trial and error process, [three functions](Codes/insert name here) were created.
 
-And repeat
+## Off it goes
+(6 pictures in 1 to show how it moves by itself)
 
-```
-until finished
-```
+## Slight adjustments
+While watching the code run, I noticed that
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Full Code
+For the full code, click [here](Codes/ insert code name here)
 
-Explain how to run the automated tests for this system
+## Final thoughts
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
