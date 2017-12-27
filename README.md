@@ -101,27 +101,28 @@ The values of the lower and upper limit was decided by trial and error. In order
 (6 pictures in 1 to show how it moves by itself)
 
 ## Slight adjustments
-While watching the code run, I noticed that
+While watching the code run, I noticed that although you could differentiate the right and left lane with their gradients, there was nothing stopping the computer from finding a 'Right Lane' on the left side of the road. 
 
 ![png](Images/right_lane_found_on_left_side.png)
-'''python
+Initial code
+```python
 if slope < -0.48: 
     left_lines.append((slope, intercept))
     left_weights.append((length))
 elif slope > 0.48:
     right_lines.append((slope, intercept))
     right_weights.append((length))
-'''
-                   
+```
 ![png](Images/right_lane_found_on_left_side_fixed.png)
-'''python
+Fixed
+```python
 if slope < -0.48 and x1 < 500 and x2 < 500: 
     left_lines.append((slope, intercept))
     left_weights.append((length))
 elif slope > 0.48 and x1 > 300 and x2 > 300:
     right_lines.append((slope, intercept))
     right_weights.append((length))
-'''
+```
 
 ## Full Code
 For the full code, click [here](Codes/ insert code name here)
