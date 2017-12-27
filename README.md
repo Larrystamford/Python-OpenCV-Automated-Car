@@ -103,11 +103,9 @@ The values of the lower and upper limit was decided by trial and error. In order
 ## Slight adjustments
 While watching the code run, I noticed that
 
+![png](Images/right_lane_found_on_left_side.png)
+
 ![png](Images/right_lane_found_on_left_side_fixed.png)
-
-wdsds
-
-![png](Images/right_lane_found on_left_side.png)
 
 
 ## Full Code
