@@ -103,8 +103,8 @@ The values of the lower and upper limit was decided by trial and error. In order
 ## Slight adjustments
 While watching the code run, I noticed that
 
-![png](Images/right lane found on left side fixed.png)
-![png](Images/right lane found on left side.png)
+![png](Images/right_lane_found on_left_side_fixed.png)
+![png](Images/right_lane_found on_left_side.png)
 
 
 ## Full Code
