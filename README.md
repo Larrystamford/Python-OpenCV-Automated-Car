@@ -104,9 +104,24 @@ The values of the lower and upper limit was decided by trial and error. In order
 While watching the code run, I noticed that
 
 ![png](Images/right_lane_found_on_left_side.png)
-
+'''python
+if slope < -0.48: 
+    left_lines.append((slope, intercept))
+    left_weights.append((length))
+elif slope > 0.48:
+    right_lines.append((slope, intercept))
+    right_weights.append((length))
+'''
+                   
 ![png](Images/right_lane_found_on_left_side_fixed.png)
-
+'''python
+if slope < -0.48 and x1 < 500 and x2 < 500: 
+    left_lines.append((slope, intercept))
+    left_weights.append((length))
+elif slope > 0.48 and x1 > 300 and x2 > 300:
+    right_lines.append((slope, intercept))
+    right_weights.append((length))
+'''
 
 ## Full Code
 For the full code, click [here](Codes/ insert code name here)
