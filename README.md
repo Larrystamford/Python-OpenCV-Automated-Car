@@ -59,6 +59,9 @@ The following techniques were used:
 
 To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/fill in with file name) to browse the codes for these 5 steps. 
 
+### Step 3 - Notes
+It was decided that HSL
+
 ## Finding car lanes? Checked.
 ![png](images/output_6_0.png)
 
