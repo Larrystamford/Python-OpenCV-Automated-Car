@@ -16,6 +16,7 @@ The initial goals are:
 
 Before that, we need to import cv2, time and numpy.
 
+![png](Images/15.png)
 To achieve step 1, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
 ```python
 import cv2
@@ -37,8 +38,7 @@ def main():
 
 main()
 ```
-(put image of imagegrab running)
-![png](Images/15.png)
+
 
 To achieve step 2, we will need to [download](directkeys.py) and import directkeys.py.
 ```python
