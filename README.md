@@ -67,6 +67,7 @@ To complete these 5 steps, you can refer to an excellent step-by-step guide by M
 ![png](images/output_6_0.png)
 
 ## Self-driving
+![png](Images/16.png)
 The idea I decided to go with is a simple one. 
 1) Attain the X-coordinates on the identified lane line/lines for Y = 300.
 ```python
@@ -93,7 +94,6 @@ def middle_xcoordinate(lines):
         pass
 ```
 2) If two lane lines have been identified, the centre of the car is to stay between the two calculated X-coordinates.
-![png]()
 ```python
 def main():
     while(True):
@@ -107,7 +107,6 @@ def main():
 ```
 
 3) If only one of the lane line has been indentified, the centre of the car is to stay a safe distance from the calculated X-coordinate.
-![png]()
 ```python
 def main():
     while(True):
