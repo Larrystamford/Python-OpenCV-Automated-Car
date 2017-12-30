@@ -28,13 +28,17 @@ def main():
     while(True):
         # bbox dimensions to match an 800x600 resolution of the Udacity self-driving car simulator in windowed mode   
         screen = np.array(ImageGrab.grab(bbox=(0,40,800,600)))
-        cv2.imshow('window',cv2.cvtColor(screen, cv2.COLOR_BGR2RGB))
+        cv2.namedWindow('window', cv2.WINDOW_NORMAL)
+        cv2.resizeWindow('window', 400, 300)
+        cv2.imshow('window', screen)
         if cv2.waitKey(25) & 0xFF == ord('q'):
             cv2.destroyAllWindows()
             break
+
+main()
 ```
 (put image of imagegrab running)
-![png](Images/output_6_0.png)
+![png](Images/15.png)
 
 To achieve step 2, we will need to [download](directkeys.py) and import directkeys.py.
 ```python
