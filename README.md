@@ -66,7 +66,7 @@ To complete these 5 steps, you can refer to an excellent step-by-step guide by M
 ## Finding car lanes? Checked.
 ![png](Images/18.png)
 
-## Self-driving
+## Self-driving - Attaining the necessary coordinates
 ![png](Images/17.png)
 The idea I decided to go with is a simple one. 
 1) Attain the X-coordinates on the identified lane line/lines for Y = 300.
@@ -152,13 +152,8 @@ elif slope > 0.48 and x1 > 300 and x2 > 300:
 For the full code, click [here](Codes/ insert code name here)
 
 ## Final thoughts
+This was a simple "old school" self-driving car project that can be further improved by adding object detection. For example, object detection could identify other cars on the road so as to avoid it. Self-driving technology has changed a lot. Deep Learning is one of it's leadin
 
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
