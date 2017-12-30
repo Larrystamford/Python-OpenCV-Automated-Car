@@ -14,8 +14,8 @@ The initial goals are:
 2) Send keyboard input to game screen
 3) Use OpenCV on the game screen
 
-Before that, we need to import cv2, time and numpy.
 
+## Step 1
 ![png](Images/15.png)
 To achieve step 1, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
 ```python
@@ -39,8 +39,8 @@ def main():
 main()
 ```
 
-
-To achieve step 2, we will need to [download](directkeys.py) and import directkeys.py.
+## Step 2
+We will need to [download](directkeys.py) and import directkeys.py.
 ```python
 from directkeys import PressKey, ReleaseKey, W, A, S, D
 
@@ -63,17 +63,34 @@ The following techniques were used:
 
 To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/fill in with file name) to browse the codes for these 5 steps. 
 
-### Step 3 - Notes
-It was decided that HSL
-
 ## Finding car lanes? Checked.
 ![png](images/output_6_0.png)
 
 ## Self-driving
 The idea I decided to go with is a simple one. 
-1) Attain the Y- and X-coordinates that is at the centre of the identified lane line/lines.
+1) Attain the X-coordinates on the identified lane line/lines for Y = 300.
 ```python
+def get_middle_xcoordinate(y_centre, line):
+    try:
+        if line is None:
+            return None
+        slope, intercept = line
+        x_centre = int((y_centre - intercept)/slope)
+        return x_centre
+    except Exception as e:
+    #print(str(e))
+        pass
 
+def middle_xcoordinate(lines):
+    try:
+        left_lane, right_lane = average_slope_intercept(lines)
+        y_centre = 300
+        left_x = get_middle_xcoordinate(y_centre, left_lane)
+        right_x = get_middle_xcoordinate(y_centre, right_lane)
+        return left_x, right_x
+    except Exception as e:
+    #print(str(e))
+        pass
 ```
 2) If two lane lines have been identified, the centre of the car is to stay between the two calculated X-coordinates.
 ![png]()
@@ -83,10 +100,10 @@ def main():
         lower_limit = -65
         upper_limit = 65
 
-        if lower_limit < abs(right_midx - 400) - abs(left_midx - 400) < upper_limit:
+        if lower_limit < abs(right_x - 400) - abs(left_x - 400) < upper_limit:
             straight()
             print('Both lanes found. I am near the centre of both lanes, going straight. {} < {}value < {}'
-                  .format(two_lower_limit, abs(right_midx - 400) - abs(left_midx - 400), two_upper_limit))
+                  .format(two_lower_limit, abs(right_x - 400) - abs(left_x - 400), two_upper_limit))
 ```
 
 3) If only one of the lane line has been indentified, the centre of the car is to stay a safe distance from the calculated X-coordinate.
@@ -97,12 +114,12 @@ def main():
         left_lower_limit = 70
         left_upper_limit = 120
 
-        if left_lower_limit < abs(left_midx - 400) < left_upper_limit:
+        if left_lower_limit < abs(left_x - 400) < left_upper_limit:
             straight()
             print('Only left lane. Not too far and not too near from left lane, going straight. {} < {}value < {}'
-                  .format(left_lower_limit, abs(left_midx - 400), left_upper_limit))
+                  .format(left_lower_limit, abs(left_x - 400), left_upper_limit))
 ```
-The values of the lower and upper limit was decided by trial and error. In order to tidy up the codes and increase the efficiency of the trial and error process, [three functions](Codes/insert name here) were created.
+The values of the lower and upper limit was decided by trial and error. In order to tidy up the codes and increase the efficiency of the trial and error process, [three functions](Codes/three_functions.py) were created.
 
 ## Off it goes
 ![png](Images/12.png)
