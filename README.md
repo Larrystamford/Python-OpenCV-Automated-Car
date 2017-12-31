@@ -15,7 +15,7 @@ The initial goals are:
 3) Use OpenCV on the game screen
 
 
-## Step 1
+## Step 1 - Accessing the game screen
 ![png](Images/15.png)
 To achieve step 1, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
 ```python
@@ -39,7 +39,7 @@ def main():
 main()
 ```
 
-## Step 2
+## Step 2 - Sending keyboard input to game screen
 We will need to [download](directkeys.py) and import directkeys.py.
 ```python
 from directkeys import PressKey, ReleaseKey, W, A, S, D
@@ -152,16 +152,8 @@ elif slope > 0.48 and x1 > 300 and x2 > 300:
 For the full code, click [here](Codes/ insert code name here)
 
 ## Final thoughts
-This was a simple "old school" self-driving car project that can be further improved by adding object detection. For example, object detection could identify other cars on the road so as to avoid it. Self-driving technology has changed a lot. Deep Learning is one of it's leadin
+This was a simple "old school" self-driving car project that can be further improved by adding object detection. For example, object detection could identify other cars on the road so as to avoid it. Self-driving technology has changed a lot since Artificial-Intelligence came into the picture. Instead of relying on simple rules or machine-learning algorithms to train cars to drive, people are taking inspiration from cognitive science to give machines a kind of common sense and the ability to quickly deal with new situations. The future of autonomous technologies is certainly one to keep an eye on.
 
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
