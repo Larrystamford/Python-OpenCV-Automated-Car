@@ -6,16 +6,16 @@
 In this project, I touched on using certain 
 OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-driving car simulator. After which, rules were hardcoded to allow the car to drive itself based on the detected lane markings.
   
-Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent the road is.
+Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent and steep the road is.
 
 ## Getting Started
 The initial goals are:
-1) Access the game screen
-2) Send keyboard input to game screen
+1) Capture the game screen
+2) Send keyboard inputs to the game
 3) Use OpenCV on the game screen
 
 
-## Step 1 - Accessing the game screen
+## Step 1 - Capturing the game screen
 ![png](Images/15.png)
 To achieve step 1, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
 ```python
@@ -39,7 +39,7 @@ def main():
 main()
 ```
 
-## Step 2 - Sending keyboard input to game screen
+## Step 2 - Sending keyboard inputs to the game
 We will need to [download](directkeys.py) and import directkeys.py.
 ```python
 from directkeys import PressKey, ReleaseKey, W, A, S, D
