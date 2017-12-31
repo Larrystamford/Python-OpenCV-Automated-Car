@@ -15,7 +15,7 @@ The initial goals are:
 
 
 ## Step 1 - Capturing the game screen
-![png](Images/15.png)
+![png](Images/20.png)
 To achieve step 1, we will need to install the Python Imaging Library(PIL) and import ImageGrab.
 ```python
 import cv2
