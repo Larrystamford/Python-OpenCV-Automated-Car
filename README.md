@@ -1,6 +1,6 @@
 # Python-OpenCV-Automated-Car
 
-![png](Images/3.png)
+![png](Images/19.png)
 
 ## A small learning project to get comfortable with using Python and OpenCV
 In this project, I touched on using certain 
