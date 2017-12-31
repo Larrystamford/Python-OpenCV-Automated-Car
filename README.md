@@ -3,8 +3,7 @@
 ![png](Images/19.png)
 
 ## A small learning project to get comfortable with using Python and OpenCV
-In this project, I touched on using certain 
-OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-driving car simulator. After which, rules were hardcoded to allow the car to drive itself based on the detected lane markings.
+In this project, I touched on using certain OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-driving car simulator. After which, rules were hardcoded to allow the car to drive itself based on the detected lane markings.
   
 Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent and steep the road is.
 
@@ -148,11 +147,11 @@ elif slope > 0.48 and x1 > 300 and x2 > 300:
     right_weights.append((length))
 ```
 
-## Full Code
-For the full code, click [here](Codes/Full_Code_Python_OpenCV_Automated_Car.py).
-
 ## Final thoughts
 This was a simple "old school" self-driving car project that can be further improved by adding object detection. For example, object detection could identify other cars on the road so as to avoid it. Self-driving technology has changed a lot since Artificial-Intelligence came into the picture. Instead of relying on simple rules or machine-learning algorithms to train cars to drive, people are taking inspiration from cognitive science to give machines a kind of common sense and the ability to quickly deal with new situations. The future of autonomous technologies is certainly one to keep an eye on.
+
+## Full Code
+To browse the full code, you can click [here](Codes/Full_Code_Python_OpenCV_Automated_Car.py).
 
 ## Acknowledgments
 This project would not have been possible without:
