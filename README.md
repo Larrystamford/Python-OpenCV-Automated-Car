@@ -61,7 +61,7 @@ The following techniques were used:
 - Hough Transform Line Detection
 - Averaging and Extrapolating Lines
 
-To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/4%20OpenCV%20Steps%20%2B%20Averaging%20lines.py) to browse the codes for these 5 steps. 
+To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/OpenCV%20Steps%20%2B%20Averaging%20lines.py) to browse the codes for these 5 steps. 
 
 ## Finding car lanes? Checked.
 ![png](Images/18.png)
@@ -149,7 +149,7 @@ elif slope > 0.48 and x1 > 300 and x2 > 300:
 ```
 
 ## Full Code
-For the full code, click [here](Codes/ insert code name here)
+For the full code, click [here](Codes/Full_Code_Python_OpenCV_Automated_Car.py)
 
 ## Final thoughts
 This was a simple "old school" self-driving car project that can be further improved by adding object detection. For example, object detection could identify other cars on the road so as to avoid it. Self-driving technology has changed a lot since Artificial-Intelligence came into the picture. Instead of relying on simple rules or machine-learning algorithms to train cars to drive, people are taking inspiration from cognitive science to give machines a kind of common sense and the ability to quickly deal with new situations. The future of autonomous technologies is certainly one to keep an eye on.
