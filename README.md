@@ -154,15 +154,6 @@ For the full code, click [here](Codes/Full_Code_Python_OpenCV_Automated_Car.py).
 ## Final thoughts
 This was a simple "old school" self-driving car project that can be further improved by adding object detection. For example, object detection could identify other cars on the road so as to avoid it. Self-driving technology has changed a lot since Artificial-Intelligence came into the picture. Instead of relying on simple rules or machine-learning algorithms to train cars to drive, people are taking inspiration from cognitive science to give machines a kind of common sense and the ability to quickly deal with new situations. The future of autonomous technologies is certainly one to keep an eye on.
 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-
-
 ## Acknowledgments
 This project would not have been possible without:
 * **Harrison Kinsley** - [His Github link](https://github.com/Sentdex/)
