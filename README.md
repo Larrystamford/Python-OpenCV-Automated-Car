@@ -60,7 +60,7 @@ The following techniques were used:
 - Hough Transform Line Detection
 - Averaging and Extrapolating Lines
 
-To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/OpenCV%20Steps%20%2B%20Averaging%20lines.py) to browse the codes for these 5 steps. 
+To complete these 5 steps, you can refer to an excellent step-by-step guide by Mr Naoki Shibuya [here](https://github.com/naokishibuya/car-finding-lane-lines)! Else, you can click [here](Codes/OpenCV%20Steps%20%2B%20Averaging%20Lines.py) to browse the codes for these 5 steps. 
 
 ## Finding car lanes? Checked.
 ![png](Images/18.png)
