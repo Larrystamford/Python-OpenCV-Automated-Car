@@ -2,10 +2,9 @@
 
 ![png](Images/19.png)
 
-## A small learning project to get comfortable with using Python and OpenCV
+## A small learning project with using Python and OpenCV
 In this project, I touched on using certain OpenCV tools in an attempt to identify the lanes on the road of a Udacity self-driving car simulator. After which, rules were hardcoded to allow the car to drive itself based on the detected lane markings.
   
-Spoilers: The car drives fine on a straight road. The chances of the car going off-road is proportional to how bent and steep the road is.
 
 ## Getting Started
 The initial goals are:
